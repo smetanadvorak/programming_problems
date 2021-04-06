@@ -19,7 +19,8 @@ for result in results:
 
 ### Run the target program on a list of tests
 tests = [instance for instance in testnames if instance.endswith(inputext)]
-print(tests)
+tests.sort()
+
 for test in tests:
 	print('Running test ' + test + ' ... ', end="", flush=True)
 	starttime = time.time()
